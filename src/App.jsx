@@ -3,7 +3,7 @@ import { Send } from "lucide-react";
 
 const FoodChatbot = () => {
   const [messages, setMessages] = useState([
-    { text: "Hello! What would you like to eat today?", sender: "bot" }
+    // { text: "Hello! What would you like to eat today?", sender: "bot" }
   ]); 
   const [input, setInput] = useState("");
 
@@ -37,7 +37,7 @@ const FoodChatbot = () => {
           <div className='flex-1 overflow-y-auto p-4 space-y-4 mt-4'>
             {messages.map((msg, index) => (
               <div key={index} className={`p-3 max-w-[75%] rounded-xl text-lg shadow-lg ${msg.sender === "bot" ? "bg-gray-700 self-start" : "bg-blue-500 self-end text-white"}`}>
-                {msg.text}
+                {/* {msg.text} */}
               </div>
             ))}
           </div>
